@@ -1,0 +1,240 @@
+html {
+    background-image: url("../media/spaceshipbackground-min.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+body {
+    max-width: 40rem;
+    margin: 10rem auto;
+    border: solid;
+    border-radius: 1rem;
+    font-size: 12px;
+    font-family: 'Tektur', cursive;
+    background-color: #253A4D;
+    color: white;
+    position: relative;
+}
+
+.btn {
+    background-color: lightslategray;
+    font-weight: bold;
+    color: black;
+}
+
+.helpBtn,
+.headerBtn {
+    border: solid;
+    background-color: #5b7c99;
+    width: 3rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+}
+
+.helpBtn {
+    position: absolute;
+    right: 0;
+}
+
+.headerBtn {
+    width: auto;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #5b7c99;
+    font-size: 20px;
+    margin: 0rem 0rem;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Tektur', cursive;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#game-container {
+    height: 50vh;
+}
+
+.splashScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.splashScreen>div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+div>.btn {
+    width: 90px;
+    border-radius: 0;
+}
+
+#name-input-container {
+    display: flex;
+    margin: auto 0;
+    gap: 10px;
+    position: relative;
+}
+
+#name-input-container input {
+    margin: 0;
+}
+
+@media (min-width: 37.5em) {
+    div>.btn {
+        width: 150px;
+    }
+
+    #name-input-container {
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    #name-input-container input {
+        width: 20rem;
+        border: solid;
+        border-color: #5b7c99;
+    }
+
+    #addPlayer {
+        width: 80px;
+    }
+}
+
+.nameDisplay {
+    font-size: 1.5rem;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+
+p {
+    margin: 0;
+}
+
+button:active {
+    color: white;
+}
+
+button:hover {
+    color: gray;
+}
+
+.warning {
+    border-color: red;
+}
+
+#errorMessage {
+    position: absolute;
+    bottom: 2.5rem;
+}
+
+#difficulty,
+#game-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scrambledWord {
+    font-size: 20px;
+    letter-spacing: 1rem;
+
+}
+
+#game-screen {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 8rem;
+}
+
+
+#timer {
+    position: absolute;
+    font-size: 1rem;
+    top: -2rem;
+}
+
+#frenzyTimer {
+    position: absolute;
+    font-size: 1rem;
+    top: -7rem;
+}
+
+#playerLives {
+    position: absolute;
+    top: 14rem;
+    font-size: 1rem;
+}
+
+#scoreCounter {
+    position: absolute;
+    top: 12rem;
+    font-size: 1rem;
+}
+
+#roundCounter {
+    font-size: 1rem;
+}
+
+#playerGuess {
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid none solid none;
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1rem;
+
+}
+
+#instructions-screen {
+    margin: auto;
+    position: absolute;
+    color: black;
+    top: 0;
+}
+
+.modal-header {
+    padding: 0 1rem;
+}
+
+#game-over {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: auto;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none !important;
+}
